@@ -1,0 +1,61 @@
+Ejercicio 1.5.1
+
+	En este ejercicio, la función print_array recorre el arreglo a e imprime cada elemento. Luego, en la función main, se crea un arreglo arr y se calcula su tamaño dividiendo el tamaño total del arreglo entre el tamaño de un elemento individual. Finalmente, se llama a print_array para imprimir los elementos del arreglo arr.
+
+Ejercicio 1.5.2
+
+	En este ejercicio, la función contar_duplicados utiliza dos bucles for anidados para comparar cada elemento con los elementos restantes en el arreglo. Si se encuentra un elemento duplicado, se incrementa el contador de duplicados. Se utiliza una instrucción break para evitar contar el mismo elemento duplicado varias veces.
+	En la función main, se crea un arreglo arr y se calcula su tamaño. Luego, se llama a contar_duplicados para obtener el número total de elementos duplicados y se imprime el resultado.
+
+Ejercicio 1.5.3
+
+	La función imprimir_elementos_impares recorre el arreglo y verifica si cada elemento es impar usando el operador de módulo (%). Si el residuo de la división por 2 es diferente de cero, significa que el número es impar y se imprime. En la función main, se crea un arreglo arr y se calcula su tamaño, luego se llama a imprimir_elementos_impares para imprimir los elementos impares del arreglo.
+
+Ejercicio 1.5.4
+
+	La función eliminar_elemento toma como argumentos el arreglo, un puntero al contador de elementos y la posición del elemento que se va a eliminar. Primero verifica si la posición es válida. Luego, mueve todos los elementos a la derecha de la posición un lugar hacia la izquierda para eliminar el elemento en la posición dada. Finalmente, reduce el contador de elementos.
+	En la función main, se crea un arreglo arr, se calcula su tamaño y se define la posición del elemento que se va a eliminar. Luego se imprime el arreglo después de eliminar el elemento en la posición especificada.
+
+Ejercicio 1.5.5
+
+	La función segundo_menor recorre el arreglo y mantiene un seguimiento del elemento más pequeño y el segundo elemento más pequeño encontrado hasta el momento. Al final, devuelve el segundo elemento más pequeño. En caso de que el arreglo tenga menos de dos elementos, la función imprimirá un mensaje y retornará un valor (-1) para indicar un problema.
+	En la función main, se crea un arreglo arr, se calcula su tamaño y se llama a la función segundo_menor para encontrar el segundo menor elemento. Luego se imprime este elemento si no hay problemas.
+
+Ejercicio 1.5.6
+
+	La función imprimir_binario toma un número entero como entrada y calcula su representación binaria dividiendo sucesivamente entre 2 y guardando los residuos. Luego, imprime los dígitos binarios en orden inverso, ya que los residuos se calculan desde el bit menos significativo hasta el más significativo.
+	En la función main, se define un número y se llama a imprimir_binario para imprimir su representación binaria.
+
+Ejercicio 1.5.7
+
+	La función entero_invertido toma un número entero como entrada y crea otro número al invertir sus dígitos utilizando operaciones de división y módulo. Por cada dígito en el número original, se calcula el dígito menos significativo y se agrega a invertido multiplicando por 10, de modo que los dígitos se coloquen en orden inverso.
+	En la función main, se define un número y se llama a entero_invertido para obtener su versión invertida, que luego se imprime.
+
+Ejercicio 1.5.8
+
+	for(i=0; i<10; i++)
+    		block;
+	En este caso, el bloque se ejecutará 10 veces, ya que el bucle for se repite 10 veces.
+
+	for(i=0; i<10; i++)
+    		for(j=1; j<10; j*=2)
+        		block;
+	El primer bucle for se ejecutará 10 veces y el segundo bucle for se ejecutará para cada iteración del primer bucle. Dado que el segundo bucle se ejecuta con j tomando valores de potencias de 2, y el primer bucle se ejecuta 10 veces, el bloque se ejecutará un total de 10 * 4 = 40 veces.
+
+	for(i=1; i<1000; i*=2)
+    		block;
+	El bucle for se ejecutará hasta que i supere 1000. Como i se duplica en cada iteración, se ejecutará un total de log2(1000) = 10 veces.
+
+	for(i=1000; i>=1; i/=2)
+    		block;
+	El bucle se ejecutará hasta que i alcance 1. Dado que i se divide a la mitad en cada iteración, se ejecutará log2(1000) + 1 = 11 veces.
+
+	for(i=0; i<10; i++)
+    		for(j=0; j<10; j++)
+        		block;
+	Ambos bucles se ejecutarán 10 veces cada uno, lo que resulta en 10 * 10 = 100 ejecuciones del bloque.
+
+	for(i=0; i<10; i++)
+    		for(j=0; j<=i; j++)
+        	block;
+	El primer bucle se ejecutará 10 veces. En cada iteración del primer bucle, el segundo bucle se ejecutará desde 0 hasta el valor actual de i. Entonces, el bloque se ejecutará 1 vez en la primera iteración, 2 veces en la segunda iteración, y así sucesivamente hasta 10 veces en la última iteración. En total, el bloque se ejecutará 1 + 2 + ... + 10 = 55 veces.

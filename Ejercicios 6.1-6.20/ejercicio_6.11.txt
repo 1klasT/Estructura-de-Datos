@@ -1,0 +1,9 @@
+En C, no es posible intercambiar los valores de dos variables sin usar una variable auxiliar o una función debido a varias razones:
+
+C carece de referencias, no hay forma de enlazar variables.
+La asignación en C siempre copia valores y no permite intercambio directo.
+Los parámetros se pasan por valor, no se pueden modificar fuera de una función.
+No hay operadores especiales para intercambiar valores en C.
+Las variables locales en C están aisladas y no interactúan directamente.
+En la memoria, las variables tienen "casilleros" independientes.
+En resumen, la simple semántica de C no proporciona un mecanismo para el intercambio directo de valores entre variables, requiriendo una variable adicional o una función.
